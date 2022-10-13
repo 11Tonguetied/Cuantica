@@ -6,8 +6,11 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<title>Visualizacion</title>
 	<script type="text/javascript">
-		function cambio(target){
-			base=""
+			base="Grafica (";
+			end=").html";
+			path=base+String(target)+end;
+			window.alert(path);
+			$('#frame').attr('scr', path);
 		}
 		
 	</script>
