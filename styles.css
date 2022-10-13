@@ -1,0 +1,16 @@
+*{margin: 0;padding: 0;}
+@font-face {font-family: netflix;src: url("/BEBAS.ttf");}
+body{background:url(C:/Users/Alan/Desktop/back.jpg);background-attachment: fixed;background-size: cover;transition: background 2s;box-shadow: inset 0px 0px 200px 30px;user-select: none; width: 100%;height: 100%;}
+.content{margin: 5%;width: 90%;height: 60%;border: ;}
+iframe{border-width: 0px;}
+ul, ol{list-style:none;}
+#header{margin: auto;width: 80%;font-family:arial, helvetica, sans-serif}
+.nav li button {background:#000;color:#fff; text-decoration:none; padding:10px 15px;display:block;}
+.nav li button:hover{background:#15b1e6;color:#000 }
+.nav > li{float:left; width: 8%;}
+.nav li ul{display:none; position:absolute;}
+.nav li:hover > ul {display:block; }
+.nav li ul li {position:relative; }
+.nav li ul li ul{right:-140px;top:0px;}
+.titulo{font-family: netflix;}
+
