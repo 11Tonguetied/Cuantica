@@ -4,10 +4,10 @@ body{background:url(https://i.pinimg.com/originals/fa/c0/5c/fac05c110c458e9bab3a
 .content{margin: 5%;width: 90%;height: 60%;}
 iframe{border-width: 1px;border-color: white;border-style: dashed;}
 ul, ol{list-style:none;}
-#header{margin: auto;width: 80%;font-family:arial, helvetica, sans-serif}
+#header{margin-left: 10%;margin-right: 9%;width: 80%;font-family:arial, helvetica, sans-serif}
 .nav li button {background:#000;color:#fff; text-decoration:none; padding:10px 15px;display:block;}
 .nav li button:hover{background:#15b1e6;color:#000 }
-.nav > li{float:left; width: 8%;}
+.nav > li{float:left; width: 10%;}
 .nav li ul{display:none; position:absolute;}
 .nav li:hover > ul {display:block; }
 .nav li ul li {position:relative; }
