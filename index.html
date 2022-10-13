@@ -6,15 +6,18 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<title>Visualizacion</title>
 	<script type="text/javascript">
+		const button = document.getElementsByTagName("button");
 		function cambio(target){
 			base="Grafica (";
 			end=").html";
 			path=base+String(target)+end;
 			window.alert(path);
-			$(':button').prop('disabled', true);
-			$('#frame').attr('scr', path);
+			document.getElementById('frame').prop('disabled', true);
+			const button = document.getElementsByTagName("button");
+			for (const i of button) {i.disabled = true}
+			document.getElementById('frame').attr('scr', path);
 		}
-		$('#frame').on('load', function(){$(':button').prop('disabled', false);});
+		document.getElementById('frame').on('load', function(){for (const i of button) {i.disabled = false});
 	</script>
 </head>
 <body>
