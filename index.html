@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<title>Visualizacion</title>
 	<script type="text/javascript">
-		const button = document.getElementsByTagName("button");
+		const indice=["(1,1,1):","(1,1,2):","(1,2,1):","(2,1,1):","(1,2,2):","(2,1,2):","(2,2,1):","(1,1,3):","(1,3,1):","(3,1,1):","(2,2,2):","(1,2,3):","(1,3,2):","(2,1,3):","(2,3,1):","(3,1,2):","(3,2,1):","(2,2,3):","(2,3,2):","(3,2,2):","(1,3,3):","(3,1,3):","(3,3,1):","(2,3,3):","(3,2,3):","(3,3,2):","(3,3,3):"];
 		function cambio(target){
 			base="Grafica (";
 			end=").html";
@@ -15,9 +15,10 @@
 			document.getElementById('frame').prop('disabled', true);
 			const button = document.getElementsByTagName("button");
 			for (const i of button) {i.disabled = true;i.classList.remove('boton');i.classList.add('boton2');}
-			document.getElementById('frame').attr('scr', path);
+			document.getElementById('frame').scr=path;
+			document.getElementById("identificador").innerHTML=indice[target];
 		}
-		document.getElementById('frame').on('load', function(){for (const i of button) {i.disabled = false;i.classList.remove('boton2');i.classList.add('boton');}});
+		document.getElementById('frame').onload = function(){for (const i of button) {i.disabled = false;i.classList.remove('boton2');i.classList.add('boton');}};
 	</script>
 </head>
 <body>
@@ -66,6 +67,8 @@
 		</ul></li>
 	<li><button class="boton" onclick="cambio(27)">(3,3,3)</button></li></li>
 </div>
+<br>
+<p class="titulo" id="Identificador">()</p>	
 <iframe id="frame" src="" class="content">
 </iframe>
 </body>
