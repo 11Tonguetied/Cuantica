@@ -12,7 +12,6 @@
 			end=").html";
 			path=base+String(target)+end;
 			window.alert(path);
-			document.getElementById('frame').prop('disabled', true);
 			const button = document.getElementsByTagName("button");
 			for (const i of button) {i.disabled = true;i.classList.remove('boton');i.classList.add('boton2');}
 			document.getElementById('frame').scr=path;
