@@ -11,9 +11,10 @@
 			end=").html";
 			path=base+String(target)+end;
 			window.alert(path);
+			$(':button').prop('disabled', true);
 			$('#frame').attr('scr', path);
 		}
-		
+		$('#frame').on('load', function(){$(':button').prop('disabled', true);});
 	</script>
 </head>
 <body>
@@ -62,7 +63,7 @@
 		</ul></li>
 	<li><button onclick="cambio(27)">(3,3,3)</button></li></li>
 </div>
-<iframe src="" class="content">
+<iframe id="frame" src="" class="content">
 </iframe>
 </body>
 </html>
