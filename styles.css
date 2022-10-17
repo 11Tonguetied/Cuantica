@@ -2,7 +2,7 @@
 html{height:100%}
 @font-face {font-family: netflix;src: url("BEBAS.ttf");}
 body{background:url(https://i.pinimg.com/originals/fa/c0/5c/fac05c110c458e9bab3a3248bfb3c376.jpg);background-attachment: fixed;background-size: cover;transition: background 2s;box-shadow: inset 0px 0px 200px 30px;user-select: none; width: 100%;height: 100%;}
-.content{margin: 5%;width: 90%;height: 60%;}
+.content{margin: 5%;width: 90%;height: 80%;}
 iframe{border-width: 1px;border-color: white;border-style: dashed;}
 ul, ol{list-style:none;}
 #header{margin-left: 10%;margin-right: 9%;width: 80%;font-family:arial, helvetica, sans-serif}
